@@ -33,12 +33,12 @@ const getVariant = variant => {
         onClick={onClick}
         className={`
           ${getVariant(variant)}  transition duration-75  ${!paddingLess &&
-          "px-[20px] py-3"}  ${!square &&
+          "sm:px-[20px] px-4 py-2 sm:py-3"}  ${!square &&
           "rounded-[8px] sm:rounded-[8px] "} active:scale-95 ${className}  ${!iconPresent &&
-            "flex justify-center items-center"} gap-[10px] text-[18px] font-Agency text-black uppercase font-bold `}
+            "flex justify-center items-center"} gap-[10px] sm:text-[18px] text-[14px] font-Agency text-black uppercase font-bold `}
       >
         {imgSrc && (
-        <div className="relative w-[20px] h-[20px]">
+        <div className="relative sm:w-[20px] w-[10px] sm:h-[20px] h-[10px]">
           <Image
             src={imgSrc}
             alt={imgAlt}
