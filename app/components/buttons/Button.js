@@ -2,7 +2,7 @@ import Image from "next/image"
 const getVariant = variant => {
     switch (variant) {
       case "primary":
-        return "bg-[#F2CE38;] hover:bg-black text-white shadow shadow-black-600/25 hover:shadow-black-600/75"
+        return "bg-[#F2CE38;] hover:bg-black text-black shadow shadow-black-600/25 hover:shadow-black-600/75"
       case "secondary":
         return "bg-[#9747FF] hover:bg-black text-white shadow shadow-black-600/25 hover:shadow-black-600/75"
   
