@@ -24,7 +24,7 @@ function AboutUs() {
             A B O U T U S
           </h3>
           <motion.h2 className="font-Agency sm:text-[52px] text-[30px] font-bold sm:leading-[62px] leading-[42px]"
-             variants={slideIn("right", "tween", 0.2, 1)}
+             variants={slideIn("right", "tween", 0.1, 1)}
           >
             At Contracting Plus, we are a forward-thinking force in Sub-Saharan
             Africa, dedicated to unlocking boundless possibilities.
