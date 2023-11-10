@@ -14,8 +14,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="p-20">
-      <h2 className="font-Agency font-bold text-[62px] text-center mb-5">
+    <div className="sm:p-20 px:5 ">
+      <h2 className="font-Agency font-bold sm:text-[62px] text-[36px] text-center py-5">
         VIEW OUR LATEST PROJECTS
       </h2>
       
