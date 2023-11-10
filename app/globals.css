@@ -105,3 +105,6 @@ body {
       background-color: #F2CE38; /* Adjust the color of the line */
       
 }
+@media only screen and (max-width: 600px) {
+
+}
