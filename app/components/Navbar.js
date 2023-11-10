@@ -31,7 +31,7 @@ const Navbar = () => {
             Get A Quote
           </Button>
           <div className="flex sm:hidden">
-          <IconContext.Provider value={{size:"25px"}}>
+          <IconContext.Provider value={{size:"30px"}}>
           <RiMenu3Fill/>
           </IconContext.Provider>
           </div>
