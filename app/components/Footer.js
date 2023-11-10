@@ -50,9 +50,9 @@ function Footer() {
         {socialMedia.map((social, index) => {
           return (
             <li
-              className="w-[50px] h-[50px] flex justify-center items-center rounded-full  mb-8 border border-[#ffff]"
-              key={index}
-            >
+            key={index} // Add a unique "key" prop
+            className="w-[50px] h-[50px] flex justify-center items-center rounded-full  mb-8 border border-[#ffff]"
+          >
               <Image
                 width={16}
                 height={16}
