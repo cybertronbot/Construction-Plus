@@ -21,7 +21,7 @@ function AboutUs() {
             Our expertise spans development, design, and construction, and our
             passion lies in delivering tailored, top-tier solutions that shape a
             collective future of excellence. With a track record of turning
-            ideas into reality, we're your trusted partner in the journey of
+            ideas into reality, we are your trusted partner in the journey of
             progress.
           </p>
           <div className="flex flex-row flex-wrap mt-6 sm:mt-10"></div>

@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav>
           <ul className="flex text-[18px] gap-8 font-bold font-Agency  ">
             {navLinks.map((navlink, index) => {
-              return <li>{navlink.title}</li>;
+              return <li key={index}>{navlink.title}</li>;
             })}
           </ul>
         </nav>

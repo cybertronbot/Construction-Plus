@@ -31,9 +31,9 @@ function Footer() {
                 {item.title}
               </h4>
               <ul className="mt-4">
-                {item.links.map((item) => {
+                {item.links.map((item,index) => {
                   return (
-                    <li className="font-poppins font-medium text-[16px] text-white max-w-[310px]">
+                    <li className="font-poppins font-medium text-[16px] text-white max-w-[310px] " key={index}>
                       {item.name}
                     </li>
                   );
