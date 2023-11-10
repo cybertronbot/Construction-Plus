@@ -25,7 +25,7 @@ const Business = () => {
     viewport={{ once: false, amount: 0.25 }}
     
 
-    className="bg-[#F7F7F7] sm:py-20 sm:px-20 px-5">
+    className="bg-[#F7F7F7] sm:py-20 py-10 sm:px-20 px-5">
       <motion.h2
         variants={fadeIn("down", "tween", 0.2, 1)}
         className="font-Agency font-bold sm:text-[62px] text-[36px] text-center"
@@ -38,7 +38,7 @@ const Business = () => {
         regardless of the scope or complexity of the project.
       </p>
       <div>
-        <ul className="flex justify-between sm:flex-row flex-col mt-20">
+        <ul className="flex justify-between sm:flex-row flex-col sm:gap-0 gap-10 mt-20">
           {businesslines.map((businessline, index) => {
             const listItemStyle = elementStyles[index] || {};
 
