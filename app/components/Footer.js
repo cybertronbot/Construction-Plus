@@ -63,8 +63,8 @@ function Footer() {
           );
         })}
       </ul>
-      <div className="pt-6 border-t-[1px] border-t-[#3F3E45] sm:mx-20 ">
-        <p className="font-poppins text-sm leading-[27px] text-white text-center">
+      <div className="pt-6 border-t-[1px] border-t-[#3F3E45] mx-5 sm:mx-20 ">
+        <p className="font-poppins text-sm leading-[27px] text-white text-center px-5">
           Construction Plus Service Limited © 2023 All rights reserved.
         </p>
       </div>
