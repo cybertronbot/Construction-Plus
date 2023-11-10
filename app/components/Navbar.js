@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo.png";
@@ -32,29 +32,26 @@ const Navbar = () => {
           <Button variant="primary" imgSrc={send} imgAlt="send">
             Get A Quote
           </Button>
-          <div
-            className="sm:hidden flex"
-            onClick={() => setToggle(!toggle)}
-            
-          >
-            {toggle ? <IoClose /> : <RiMenu3Fill />}
-            
-          </div>
-          <div
-              className={`${
-                toggle ? "flex" : "hidden"
-              } p-6 bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
-            >
-              <ul className="list-none flex flex-col  justify-end items-center flex-1">
-                {navLinks.map((navlink) => {
-                  return (
-                    <li className="text-[16px] text-black mb-4" key={navlink.id}>
-                      {navlink.title}
-                    </li>
-                  );
-                })}
-              </ul>
+          <IconContext.Provider value={{ size: "30px" }}>
+            <div className="sm:hidden flex" onClick={() => setToggle(!toggle)}>
+              {toggle ? <IoClose /> : <RiMenu3Fill />}
             </div>
+          </IconContext.Provider>
+          <div
+            className={`${
+              toggle ? "flex" : "hidden"
+            } p-6 bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+          >
+            <ul className="list-none flex flex-col  justify-end items-center flex-1">
+              {navLinks.map((navlink) => {
+                return (
+                  <li className="text-[16px] text-black mb-4" key={navlink.id}>
+                    {navlink.title}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
