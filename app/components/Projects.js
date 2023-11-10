@@ -15,7 +15,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <motion.div className="sm:p-20 px:5  "
+    <motion.div className="sm:p-20 py-10 px:5  "
     variants={staggerContainer}
     initial='hidden'
     whileInView='show'
