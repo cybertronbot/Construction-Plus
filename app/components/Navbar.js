@@ -10,12 +10,11 @@ const Navbar = () => {
     <div>
       <div className="w-full flex justify-between items-center py-5 bg-white sm:px-20 px-5">
         <Link href="/" className="sm:flex hidden">
-          <div className="relative w-[204px]  h-[67px]">
+          <div className="relative w-[213px]  h-[67px]">
             <Image src={logo} alt="logo" layout="fill" objectFit="cover" />
           </div>
         </Link>
-        <div className="w-[200px] h-[50px] "/>
-
+        <div className="w-[200px] h-[40px]"/>
         <nav className="sm:flex hidden">
           <ul className="flex text-[18px] gap-8 font-bold font-Agency  ">
             {navLinks.map((navlink, index) => {
