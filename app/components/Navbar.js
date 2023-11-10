@@ -33,7 +33,7 @@ const Navbar = () => {
             Get A Quote
           </Button>
           <div
-            className=""
+            className="sm:hidden flex"
             onClick={() => setToggle(!toggle)}
             
           >
