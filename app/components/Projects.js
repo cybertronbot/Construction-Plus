@@ -15,14 +15,14 @@ const Projects = () => {
   }, []);
 
   return (
-    <motion.div className="sm:p-20 px:5 "
+    <motion.div className="sm:p-20 px:5  "
     variants={staggerContainer}
     initial='hidden'
     whileInView='show'
     viewport={{ once: false, amount: 0.25 }}>
       <motion.h2
         variants={fadeIn("down", "tween", 0.2, 1)}
-        className="font-Agency font-bold sm:text-[62px] text-[36px] text-center"
+        className="font-Agency font-bold sm:text-[62px] text-[36px] text-center pb-10"
       >
         VIEW OUR LATEST PROJECTS
       </motion.h2>
