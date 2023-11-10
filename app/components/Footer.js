@@ -18,7 +18,7 @@ function Footer() {
               <span className="text-primary">Email Address: </span>
               info@contractingplus.com
             </p>
-            <p className="font-poppins font-medium  text-white text-sm mt-3 max-w-[410px]">
+            <p className="font-poppins font-medium  text-white text-sm mt-3 sm:max-w-[410px]">
               <span>Telephone: </span>+234 905 6161 616
             </p>
           </div>
