@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { staggerContainer,fadeIn} from "../api/Motion";
 import { projects } from "../api/Data";
 const Projects = () => {
   const [width, setWidth] = useState(0);
@@ -14,10 +15,17 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="sm:p-20 px:5 ">
-      <h2 className="font-Agency font-bold sm:text-[62px] text-[36px] text-center py-5">
+    <motion.div className="sm:p-20 px:5 "
+    variants={staggerContainer}
+    initial='hidden'
+    whileInView='show'
+    viewport={{ once: false, amount: 0.25 }}>
+      <motion.h2
+        variants={fadeIn("down", "tween", 0.2, 1)}
+        className="font-Agency font-bold sm:text-[62px] text-[36px] text-center"
+      >
         VIEW OUR LATEST PROJECTS
-      </h2>
+      </motion.h2>
       
       <div>
         <motion.div className="px-5 sm:px-0">
@@ -58,7 +66,7 @@ const Projects = () => {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
