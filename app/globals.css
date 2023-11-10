@@ -1,19 +1,20 @@
+@import url("https://fonts.cdnfonts.com/css/gladiora");
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
+                
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	--font-agency-fb: "Agency FB", sans-serif;
+	
 }
 
 body {
@@ -24,4 +25,83 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.slanted-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: black;
+  
+}
+
+.slanted-box {
+  width: 100%;
+  height: 40px;
+  color: white;
+  position: relative;
+}
+
+.slanted-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 10%;
+  height: 100%;
+}
+
+.slanted-box:nth-child(1) {
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  transform: skew(30deg);
+  width: 20%;
+}
+
+.slanted-box:nth-child(2) {
+  background: #F2CE38;
+  transform: skew(30deg);
+  width: 30%;
+}
+
+.slanted-box:nth-child(3) {
+  background: black;
+ 
+  transform: skew(30deg);
+  width: 48%;
+
+}
+
+
+
+
+.v:before {
+  content: "";
+      position: absolute;
+      top: 50%; /* Adjust the vertical position of the line */
+      left: 0;
+      width: 40px;
+      height: 2px; /* Adjust the thickness of the line */
+      background-color: #F2CE38; /* Adjust the color of the line */
+}
+
+
+.a:after {
+  content: "";
+      position: absolute;
+      top: 50%; /* Adjust the vertical position of the line */
+      left: 90px;
+      width: 43px;
+      height: 2px; /* Adjust the thickness of the line */
+      
+      background-color: #F2CE38; /* Adjust the color of the line */
+}
+.b:before{
+  content: "";
+      position: absolute;
+      top: 50%; /* Adjust the vertical position of the line */
+      left: 140px;
+      width: 10px;
+      height: 2px; /* Adjust the thickness of the line */
+      
+      background-color: #F2CE38; /* Adjust the color of the line */
+      
 }
