@@ -46,9 +46,9 @@ function Footer() {
       
     </div>
     <div className="flex gap-3 justify-end px-32">
-          {socialMedia.map((item)=>{
+          {socialMedia.map((item,index)=>{
             return(
-              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-full  mb-8 border border-[#ffff]">
+              <div className="w-[50px] h-[50px] flex justify-center items-center rounded-full  mb-8 border border-[#ffff]" key={index}>
                 <Image width={16} height={16} src={item.icon} alt="social media" />
               </div>
             )
