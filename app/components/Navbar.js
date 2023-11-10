@@ -30,9 +30,11 @@ const Navbar = () => {
           <Button variant="primary" imgSrc={send} imgAlt="send">
             Get A Quote
           </Button>
-          <IconContext.Provider value={{size:"25px",color:"red"}}>
+          <div className="flex sm:hidden">
+          <IconContext.Provider value={{size:"25px",color:"#F2CE38;"}}>
           <RiMenu3Fill/>
           </IconContext.Provider>
+          </div>
           
          
         </div>
