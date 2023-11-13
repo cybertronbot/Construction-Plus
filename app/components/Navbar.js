@@ -9,7 +9,7 @@ import { Button } from "./buttons/Button";
 import { navLinks } from "../api/Data";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { IconContext } from "react-icons/lib";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -28,14 +28,14 @@ const Navbar = () => {
             })}
           </ul>
         </nav>
-        <IconContext.Provider value={{ size: "30px" }}>
+
         <div className="flex items-center gap-3">
           <Button variant="primary" imgSrc={send} imgAlt="send">
             Get A Quote
           </Button>
       
             <div className="sm:hidden flex" onClick={() => setToggle(!toggle)}>
-              {toggle ? <IoClose /> : <RiMenu3Fill />}
+              {toggle ? <IoClose className="text-white text-[25px]"/> : <RiMenu3Fill className="text-white text-[25px]"/>}
             </div>
       
           <div
@@ -54,7 +54,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        </IconContext.Provider>
+ 
       </div>
     </div>
   );
