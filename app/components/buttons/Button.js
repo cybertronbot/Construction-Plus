@@ -33,9 +33,9 @@ const getVariant = variant => {
         onClick={onClick}
         className={`
           ${getVariant(variant)}  transition duration-75  ${!paddingLess &&
-          "sm:px-[20px] px-4 py-2 sm:py-3"}  ${!square &&
+          "xl:px-[20px] lg:px-[14px] lg:py-2 px-4 py-2 xl:py-3"}  ${!square &&
           "rounded-[8px] sm:rounded-[8px] "} active:scale-95 ${className}  ${!iconPresent &&
-            "flex justify-center items-center"} gap-[10px] sm:text-[18px] text-[14px] font-Agency text-black uppercase font-bold `}
+            "flex justify-center items-center"} gap-[10px] xl:text-[18px] lg:text-[16px] text-[14px] font-Agency text-black uppercase font-bold `}
       >
         {imgSrc && (
         <div className="relative sm:w-[20px] w-[10px] sm:h-[20px] h-[10px]">

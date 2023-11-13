@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="bg-[#161616] ">
       <div className="flex justify-center items-center flex-col ">
-        <div className="flex justify-center items-start md:flex-row flex-col w-full  sm:px-20 px-5 pt-16 sm:pr-[300px]">
+        <div className="flex justify-center items-start md:flex-row flex-col w-full  xl:px-20 lg:px-10 px-5 pt-16 sm:pr-[300px]">
           <div className="flex-1 flex flex-col justify-start mr-10">
             <Link href="/">
               <Image src={footerlogo} width={204} height={44} alt="logo" />

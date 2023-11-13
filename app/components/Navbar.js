@@ -14,29 +14,30 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div>
-      <div className="w-full flex justify-between items-center py-5 bg-white sm:px-20 px-5">
-        <Link href="/" className="sm:flex hidden">
-          <div className="relative w-[213px]  h-[67px]">
-            <Image src={logo} alt="logo" layout="fill" objectFit="cover" />
+      <div className="w-full flex justify-between items-center xl:py-5 py-2 bg-white xl:px-20 lg:px-10 px-5">
+        <Link href="/" className="">
+          <div className="">
+            <Image src={logo} alt="logo" className="xl:w-[213px] lg:w-[150px] w-[100px] h-[50px] object-contain lg:h-[67px]" />
           </div>
         </Link>
-        <div className="w-[50px] h-[40px]" />
+     
         <nav className="sm:flex hidden">
-          <ul className="flex text-[18px] gap-8 font-bold font-Agency  ">
+          <ul className="flex xl:text-[18px] lg:text-base gap-8 font-bold font-Agency  ">
             {navLinks.map((navlink, index) => {
               return <li key={index}>{navlink.title}</li>;
             })}
           </ul>
         </nav>
+        <IconContext.Provider value={{ size: "30px" }}>
         <div className="flex items-center gap-3">
           <Button variant="primary" imgSrc={send} imgAlt="send">
             Get A Quote
           </Button>
-          <IconContext.Provider value={{ size: "30px" }}>
+      
             <div className="sm:hidden flex" onClick={() => setToggle(!toggle)}>
               {toggle ? <IoClose /> : <RiMenu3Fill />}
             </div>
-          </IconContext.Provider>
+      
           <div
             className={`${
               toggle ? "flex" : "hidden"
@@ -53,6 +54,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        </IconContext.Provider>
       </div>
     </div>
   );
