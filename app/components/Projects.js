@@ -28,7 +28,7 @@ const Projects = () => {
       </motion.h2>
       
       <div>
-        <motion.div className="px-5 sm:px-0">
+        <motion.div className="">
           <motion.div
             ref={container}
             className="w-[100%] flex cursor-grab overflow-hidden   "
