@@ -1,21 +1,16 @@
 @import url("https://fonts.cdnfonts.com/css/gladiora");
-@import url('https://fonts.cdnfonts.com/css/agency-fb');
+@import url("https://fonts.cdnfonts.com/css/agency-fb");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-                
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 
-	--font-agency-fb: "Agency FB", sans-serif;
+  --font-agency-fb: "Agency FB", sans-serif;
   overflow-x: hidden;
-	
 }
 
 body {
@@ -32,7 +27,6 @@ body {
   justify-content: center;
   width: 100%;
   border: black;
-  
 }
 
 .slanted-box {
@@ -58,55 +52,77 @@ body {
 }
 
 .slanted-box:nth-child(2) {
-  background: #F2CE38;
+  background: #f2ce38;
   transform: skew(30deg);
   width: 30%;
 }
 
 .slanted-box:nth-child(3) {
   background: black;
- 
+
   transform: skew(30deg);
   width: 48%;
-
 }
-
-
-
 
 .v:before {
   content: "";
-      position: absolute;
-      top: 50%; /* Adjust the vertical position of the line */
-      left: 0;
-      width: 40px;
-      height: 2px; /* Adjust the thickness of the line */
-      background-color: #F2CE38; /* Adjust the color of the line */
+  position: absolute;
+  top: 50%; /* Adjust the vertical position of the line */
+  left: 0;
+  width: 40px;
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: #f2ce38; /* Adjust the color of the line */
 }
-
 
 .a:after {
   content: "";
-      position: absolute;
-      top: 50%; /* Adjust the vertical position of the line */
-      left: 90px;
-      width: 43px;
-      height: 2px; /* Adjust the thickness of the line */
-      
-      background-color: #F2CE38; /* Adjust the color of the line */
+  position: absolute;
+  top: 50%; /* Adjust the vertical position of the line */
+  left: 90px;
+  width: 43px;
+  height: 2px; /* Adjust the thickness of the line */
+
+  background-color: #f2ce38; /* Adjust the color of the line */
 }
-.b:before{
+.b:before {
   content: "";
-      position: absolute;
-      top: 50%; /* Adjust the vertical position of the line */
-      left: 140px;
-      width: 10px;
-      height: 2px; /* Adjust the thickness of the line */
-      
-      background-color: #F2CE38; /* Adjust the color of the line */
-      
+  position: absolute;
+  top: 50%; /* Adjust the vertical position of the line */
+  left: 140px;
+  width: 10px;
+  height: 2px; /* Adjust the thickness of the line */
+
+  background-color: #f2ce38; /* Adjust the color of the line */
 }
 .sidebar {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slider {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.slide-track {
+  display: flex;
+
+  width: calc(294px * 12);
+
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-294px * 6));
+  }
+}
+.slide {
+  width: 294px;
+  height: 100%;
+
+  padding: 15px;
+  perspective: 200px;
 }

@@ -2,71 +2,45 @@
 import React from "react";
 import Image from "next/image";
 
-import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { staggerContainer,fadeIn} from "../api/Motion";
+
 import { projects } from "../api/Data";
 const Projects = () => {
-  const [width, setWidth] = useState(0);
-  const container = useRef();
-
-  useEffect(() => {
-    setWidth(container.current.scrollWidth - container.current.offsetWidth);
-  }, []);
+  
 
   return (
-    <motion.div className="xl:p-20 lg:p-10 py-10 px-5  "
-    variants={staggerContainer}
-    initial='hidden'
-    whileInView='show'
-    viewport={{ once: false, amount: 0.25 }}>
-      <motion.h2
-        variants={fadeIn("down", "tween", 0.2, 1)}
+    <div className=" py-10  xl:mx-20 lg:mx-10 mx-5  ">
+      <h2
         className="font-Agency font-bold lg:text-[54px] xl:text-[62px] text-[36px] text-center pb-10"
       >
         VIEW OUR LATEST PROJECTS
-      </motion.h2>
-      
+      </h2>
+
       <div>
-        <motion.div className="">
-          <motion.div
-            ref={container}
-            className="w-[100%] flex cursor-grab overflow-hidden   "
-          >
-            <motion.div
-              className="inline-flex"
-              drag="x"
-              dragConstraints={{ right: 0, left: -width }}
-              whileTap={{ cursor: "grabbing" }}
-            >
-              <ul className="flex gap-10">
-                {projects.map((project, index) => (
-                  <li
-                    className="w-[294px]"
-                    key={index}
-                   
-                  >
-                   
-                   <Image
+        <div className="">
+          <div className="w-[100%] h-[100%] flex cursor-pointer overflow-hidden   ">
+            <div>
+              <div className="slider">
+                <ul className="slide-track">
+                  {projects.map((project, index) => (
+                    <li className="slide flex flex-col" key={index}>
+                      <Image
                         src={project.img}
+                        className="full transition-transform duration-1000 hover:translate-z-[20px]"
                         alt="project-one"
-                        width={294}
-                        height={397}
-                        className="pointer-events-none"
                       />
                       <h5 className="font-Agency text-2xl text-[#161616]">
                         {project.title}
                       </h5>
                       <p>{project.content}</p>
-                   
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
