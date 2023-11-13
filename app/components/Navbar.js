@@ -35,7 +35,7 @@ const Navbar = () => {
           </Button>
       
             <div className="sm:hidden flex" onClick={() => setToggle(!toggle)}>
-              {toggle ? <IoClose className="text-white text-[25px]"/> : <RiMenu3Fill className="text-white text-[25px]"/>}
+              {toggle ? <IoClose className="text-black text-[25px]"/> : <RiMenu3Fill className="text-black text-[25px]"/>}
             </div>
       
           <div
