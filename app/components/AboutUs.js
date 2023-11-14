@@ -7,7 +7,7 @@ import { staggerContainer,textVariant,slideIn } from "../api/Motion";
 
 function AboutUs() {
   return (
-    <div className="relative w-[100%]">
+    <div className="relative w-[100%] " id='about' >
               <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -16,7 +16,7 @@ function AboutUs() {
       >
 
       <div className=" flex lg:flex-row flex-col-reverse xl:gap-20 gap-10 py-12 sm:py-32 px-5 xl:px-20 lg:px-10 ">
-        <div className="flex flex-1">
+        <div className="flex flex-1" >
           <Image src={about} className="lg:w-[400px] xl:w-[565px] xl:h-[524px]  object-contain"  alt="about-us" />
         </div>
         <div className=" flex-1 flex flex-col  ">

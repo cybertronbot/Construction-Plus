@@ -25,7 +25,7 @@ const Business = () => {
     viewport={{ once: false, amount: 0.25 }}
     
 
-    className="bg-[#F7F7F7] sm:py-20 py-10 xl:px-20 lg:px-10 px-5">
+    className="bg-[#F7F7F7] sm:py-20 py-10 xl:px-20 lg:px-10 px-5"id='services' >
       <motion.h2
         variants={fadeIn("down", "tween", 0.2, 1)}
         className="font-Agency font-bold lg:text-[54px] xl:text-[62px] text-[36px] text-center"

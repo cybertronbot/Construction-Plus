@@ -12,18 +12,22 @@ export const navLinks = [
   {
     id: "about-us",
     title: "About Us",
+    href:"#about",
   },
   {
     id: "our-services",
     title: "Our Services",
+    href:"#services",
   },
   {
     id: "why-us",
     title: "Why Us",
+    href:"#projects",
   },
   {
     id: "support",
     title: "Support",
+    href:"#support",
   },
 ];
 
