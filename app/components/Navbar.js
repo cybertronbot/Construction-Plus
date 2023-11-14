@@ -59,7 +59,9 @@ const Navbar = () => {
               {navLinks.map((navlink) => {
                 return (
                   <li className="text-[16px] text-black mb-4" key={navlink.id}>
+                  <Link href={navlink.href} className="cursor-pointer">
                     {navlink.title}
+            </Link>
                   </li>
                 );
               })}
