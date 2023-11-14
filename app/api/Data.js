@@ -77,54 +77,9 @@ export const projects = [
     title: "Project Four",
     content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
   },
-  {
-    id: "projectfive",
-    img: projectfive,
-    title: "Project Five",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectfive",
-    img: projectfive,
-    title: "Project One",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectone",
-    img: projectone,
-    title: "Project One",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projecttwo",
-    img: projecttwo,
-    title: "Project Two",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectthree",
-    img: projectfour,
-    title: "Project Three",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectfive",
-    img: projectthree,
-    title: "Project Four",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectfive",
-    img: projectfive,
-    title: "Project Five",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
-  {
-    id: "projectfive",
-    img: projectfive,
-    title: "Project One",
-    content: "Lorem ipsum dolor sit amet consectetur. Et nec tellus risus vit",
-  },
+ ,
+  
+  
 ];
 
 export const footerLinks = [
